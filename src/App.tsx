@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:8000/getData');
+      const response = await fetch('https://birdnest-server-s8y4.onrender.com/getData');
       const json = await response.json();
       setData(json);
     };
